@@ -1,19 +1,15 @@
 import React from 'react';
 import './styles.css'
 import tasty from './Tasty.jpg'
+import { NavLink } from 'react-router-dom';
 
 
 const Shop=()=>{
     return (
-        <div className="App">
-          <h3>
-            <a href=""> Shop</a>
-          </h3>
-          <h3>
-            <a href=""> Shopping cart</a>
-          </h3>
+        <div>
+          
           <div className="content">
-            <div class="sidebar">
+            <div className="sidebar">
               <h3>Shops:</h3>
               <div className="title">
                 <span>McDonald's</span>
