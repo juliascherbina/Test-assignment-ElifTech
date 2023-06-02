@@ -3,15 +3,15 @@ import './App.css';
 import './styles.css'
 import Shop from './components/shop'
 import Cart from './components/cart'
-import { NavLink, Router, Routes, Route } from "react-router-dom"
+import { NavLink, Routes, Route } from "react-router-dom"
 
 
 function App() {
   let [shops, setShops] = useState(defaultShops)
   let [cart, setCart] = useState([])
   function addToCart(product) {
-    let addedProduct = cart.find((e) => e.product == product)
-    if (addedProduct == undefined) {
+    let addedProduct = cart.find((e) => e.product === product)
+    if (addedProduct === undefined) {
       let newItem = { product: product, count: 1 };
       setCart([...cart, newItem])
     }
@@ -22,7 +22,7 @@ function App() {
   }
   function changeCartItem(product, count) {
     var newCart = cart.map(e => {
-      if (e.product == product)
+      if (e.product === product)
         return { product: e.product, count: count }
       else
         return e

@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles.css'
-import tasty from './Tasty.jpg'
 
 const Cart = (props) => {
 
