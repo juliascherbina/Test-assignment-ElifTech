@@ -7,7 +7,7 @@ import { NavLink, Routes, Route } from "react-router-dom"
 
 
 function App() {
-  let [shops, setShops] = useState(defaultShops)
+  let [shops] = useState(defaultShops)
   let [cart, setCart] = useState([])
   function addToCart(product) {
     let addedProduct = cart.find((e) => e.product === product)
